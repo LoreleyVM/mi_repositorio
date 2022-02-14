@@ -1,0 +1,580 @@
+/*Tipo para Gonza on the beat*/
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+/*font-family: 'Rock Salt', cursive;*/
+
+/*Tipo para toda la web*/
+@import url("https://fonts.googleapis.com/css2?family=Cabin+Condensed&display=swap");
+/*font-family: 'Cabin Condensed', sans-serif;*/
+
+/**
+{
+  margin: 0;
+  padding: 0;
+} 
+  **/
+  
+  
+body {
+  background-color: rgb(0, 0, 0);
+} 
+
+
+
+header, 
+nav, 
+.uno,
+.dos, .tres, .cuatro, 
+footer {
+  border: solid 1px rgb(75, 155, 11)
+} 
+
+header{
+  grid-area: header;
+}
+
+nav{
+  grid-area: nav;
+}
+
+.uno {
+  grid-area: uno;
+}
+
+.dos {
+  grid-area: dos;
+}
+
+.tres {
+  grid-area: tres;
+}
+
+.cuatro {
+  grid-area: cuatro;
+}
+
+footer{
+  grid-area: footer;
+}
+
+@media screen and (min-width:1024px) {
+#main{
+  display: grid;
+
+  /** tamaño de columnas**/
+  grid-template-columns: auto auto;
+  
+  /** tamaño filas**/
+  grid-template-rows: 5% auto auto auto auto;
+  
+  /** espacio entre column**/
+  grid-column-gap: 10px;
+  
+  /**espacio entre filas**/
+  grid-row-gap: 20px;
+  
+  /** cantidad de celdas**/
+  grid-template-areas: 
+  "header nav" 
+  "uno uno" 
+  "dos tres"
+  "cuatro cuatro"
+  "footer footer"
+}
+
+header {
+display: flex;
+justify-content: space-between; } 
+
+.titulo {
+  font-family: "Rock Salt", cursive;
+  color: whitesmoke;
+  width: 500px;
+  height: 30px;
+  padding: px 10px;
+  margin-left: 20px;
+  margin-bottom: 20px; 
+}
+
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.menu li a {
+  display: inline;
+  padding: 15px 20px 15px 20px;
+  margin-left: 0px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-family: "Cabin Condensed", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-decoration: none;
+  text-align: right;
+}
+
+.gonzaImg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gonzaImg img{
+  width: 100%;
+}
+
+.presentacion p {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-size: 20px;
+  margin-top: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
+.gonzabyn {
+  display: flex;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.gonzabyn img{
+  width: auto;
+  max-width: 450px;
+  height: auto;
+}
+
+section .tres{
+  align-items: center;
+}
+
+.numeros ul {
+margin-top: 50px;
+}
+
+.numeros ul li {
+  display: flex;
+  text-align: left;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 30px;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+}
+
+
+.videoytexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+.videoyou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 800px;
+  height: 800px;
+}
+
+.tituloYoutube {
+  display: flex;
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 25px;
+  text-decoration: underline;
+  color: whitesmoke;
+  font-weight: normal;
+  margin-top: 10px;
+  margin-bottom: 10;
+  text-align: center;
+}
+
+.pie {
+  color: thistle;
+  font-size: small;
+  margin-top: 60px;;
+  text-align: center;
+}
+}
+
+@media screen and (max-width:1119px) {
+  #main{
+    display: grid;
+    /** tamaño de columnas**/
+    grid-template-columns: auto auto;
+    /** cantidad de celdas**/
+    grid-template-areas:
+    "header header"
+    "nav nav"
+    "uno uno"
+    "dos tres"
+    "cuatro cuatro"
+    "footer footer"
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between; } 
+    
+    .titulo {
+      font-family: "Rock Salt", cursive;
+      color: whitesmoke;
+      width: 320px;
+      height: 30px;
+      padding: 3px;
+      justify-content: center;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 12px;
+    }
+    
+    
+    .menu ul {
+      display: flex;
+      list-style: none;
+      margin-top: 20px;
+    }
+    
+    .menu li a {
+      display: inline;
+      padding: 5px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-family: "Cabin Condensed", sans-serif;
+      font-weight: bold;
+      font-size: 10px;
+      text-transform: uppercase;
+      color: whitesmoke;
+      text-decoration: none;
+      text-align: center;
+    }
+    
+    .gonzaImg{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .gonzaImg img{
+      width: 100%;
+    }
+    
+    .presentacion p {
+      font-family: "Cabin Condensed", sans-serif;
+      color: whitesmoke;
+      font-size: 3px;
+      margin-top: 30px;
+      text-align: center;
+      justify-content: center;
+    }
+    
+    .gonzabyn {
+      display: flex;
+      padding: 10px;
+      justify-content: center;
+      align-items: center;
+      
+    }
+    
+    .gonzabyn img{
+      width: auto;
+      max-width: 130px;
+      height: auto;
+      margin-top: 20px;
+    }
+    
+    section .tres{
+      align-items: center;
+    }
+    
+    .numeros ul {
+    margin-top: 20px;
+    }
+    
+    .numeros ul li {
+      display: flex;
+      text-align: left;
+      padding: 5px;
+      margin-top: 25px;
+      font-size: 10px;
+      align-items: center;
+      text-decoration: none;
+      list-style: none;
+      font-family: "Cabin Condensed", sans-serif;
+      color: whitesmoke;
+    }
+    
+    
+    .videoytexto {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      background-color: black;
+    }
+    
+    .videoyou {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 319px;
+      height: 319px;
+    }
+    
+    .tituloYoutube {
+      display: flex;
+      font-family: "Cabin Condensed", sans-serif;
+      font-size: 20px;
+      text-decoration: underline;
+      color: whitesmoke;
+      font-weight: normal;
+      margin-top: 10px;
+      margin-bottom: 10;
+      text-align: center;
+    }
+    
+    .pie {
+      color: thistle;
+      font-size: 8px;
+      margin-top: 60px;;
+      text-align: center;
+    }
+}
+
+/*
+ACA COMIENZA PRODUCTS
+*/
+/**
+
+.beat {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.beat2 {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.videosbeat {
+  display: inline-block;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 13%;
+}
+
+/**
+
+/*ACA COMIENZA LICENSING INFO*/
+
+/**
+.conjunto {
+  display: flex;
+  align-items: center;
+  width: 10;
+  height: 10;
+}
+
+.licencia1 {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.licencia2 {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.licencia3 {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+**/
+
+
+/*ACA COMIENZA CONTACT*/
+
+
+/**
+.contenedor .formulario .formheader .tituloC {
+  font-weight: normal;
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  text-align: center;
+  padding: 14px 0 14px 0;
+}
+
+.contenedor .formulario {
+  background: rgb(59, 58, 58);
+  width: 90%;
+  max-width: 650px;
+  margin: auto;
+  padding: 5px 35px;
+  margin-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 3px;
+}
+
+.contenedor .formulario .formulabel {
+  display: block;
+  color: thistle;
+  font-size: 16px;
+  font-family: "Cabin Condensed", sans-serif;
+  position: relative;
+}
+
+.contenedor .formulario .formuinput,
+.formutexto {
+  background: (0, 0, 0, 0.7);
+  border: none;
+  outline: none;
+  border-bottom: 2px solid;
+  color: rgb(59, 58, 58);
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 2px;
+  font-family: "Cabin Condensed", sans-serif;
+  font-size: 14px;
+}
+
+.contenedor .formulario .formutexto {
+  resize: vertical;
+  max-height: 150px;
+  min-height: 50px;
+}
+
+.contenedor .formulario .botonsubmit {
+  width: 100%;
+  outline: none;
+  background: thistle;
+  font-family: "Cabin Condensed";
+  font-size: 16px;
+  border: none;
+  color: white;
+  padding: 12px 0;
+  cursor: pointer;
+}
+**/
+
+/*ACA COMIENZA FAQ*/
+
+
+/**
+.titulofaq {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.questions {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: bold;
+  padding: 10px;
+  text-decoration: none;
+  text-align: left;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  font-size: 16px;
+}
+
+.add {
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  line-height: 30px;
+  font-size: 18px;
+}
+
+**/
+
+/*ACA COMIENZA FIND ME*/
+
+/**
+.suscribite{
+  width: 100%;
+}
+
+.susc{
+  width: 100%;
+  height: auto;
+}
+
+.titulofind{
+  font-family: "Cabin Condensed", sans-serif;
+  color: whitesmoke;
+  font-weight: normal;
+  padding: 10px;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.iconos{
+  background: rgb(197, 195, 195);
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+**/
