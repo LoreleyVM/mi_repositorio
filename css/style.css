@@ -19,14 +19,14 @@ body {
 } 
 
 
-
+/*
 header, 
 nav, 
 .uno,
 .dos, .tres, .cuatro, 
 footer {
- /* border: solid 1px rgb(75, 155, 11) */
-} 
+  border: solid 1px rgb(75, 155, 11) 
+} */
 
 header{
   grid-area: header;
@@ -175,9 +175,14 @@ background-color: rgb(73, 4, 73);
   width: auto;
   max-width: 450px;
   height: auto;
+  
+  
 }
 
 section .tres{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
   align-items: center;
 }
 
@@ -418,12 +423,13 @@ ACA COMIENZA PRODUCTS
 
 /*ACA COMIENZA LICENSING INFO*/
 
-/**
-.conjunto {
-  display: flex;
+.conjunto img-fluid {
   align-items: center;
-  width: 10;
-  height: 10;
+  
+}
+.carousel-item {
+  max-width: 700px;
+  align-items: center;
 }
 
 .licencia1 {
@@ -459,7 +465,6 @@ ACA COMIENZA PRODUCTS
   margin-bottom: 10px;
 }
 
-**/
 
 
 /*ACA COMIENZA CONTACT*/
